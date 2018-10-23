@@ -75,17 +75,18 @@ public class HussenController : MonoBehaviour
                 //            Debug.Log("GlobalVariables.StageWriteFlag" + GlobalVariables.StageWriteFlag);
                 //            gameObjectMakeStage.GetComponent<MakeStage>();
             }
-            GlobalVariables.target1 = GameObject.Find("huusen2");
+//            GlobalVariables.target1 = GameObject.Find("huusen2");
+            GlobalVariables.target1 = this.gameObject;
             Debug.Log("GlobalVariables.target1" + GlobalVariables.target1);
 
             //Vector2  = GlobalVariables.target1.transform.position;
             //        target1 = Instantiate(Player);
             //        target1 = GameObject.Find("huusen_animator");
             //GameObject.Find("huusen2").transform.position = new Vector2(0.0f, 3.5f);
-                GlobalVariables.target1.transform.position = new Vector2(0.0f, 3.5f);
+//                GlobalVariables.target1.transform.position = new Vector2(2.0f, 1.5f);
                 GlobalVariables.HusenPosition = GlobalVariables.target1.transform.position;
 
-                //        HusenPosition = GlobalVariables.target1.transform.position;
+                        HusenPosition = GlobalVariables.target1.transform.position;
 
                 //        GlobalVariables.AnimationIdleFlag = true;
 
