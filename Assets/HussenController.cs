@@ -34,10 +34,9 @@ public class HussenController : MonoBehaviour
 
 
     public GameObject gameObjectMakeStage;
-
     //    public GameObject gameObjectBallonMove;
 
-//    public GameObject target1;
+    //    public GameObject target1;
     public GameObject Player;
     public GameObject Bomb;
 
@@ -49,16 +48,16 @@ public class HussenController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-       
-/*
-        GlobalVariables.target1 = GameObject.Find("huusen");
-        //        target1 = Instantiate(Player);
-        //        target1 = GameObject.Find("huusen_animator");
-        GlobalVariables.HusenPosition = GlobalVariables.target1.transform.position;
+        gameObjectMakeStage = GameObject.Find("GameManeger") as GameObject;
+        /*                                     
+                GlobalVariables.target1 = GameObject.Find("huusen");
+                //        target1 = Instantiate(Player);
+                //        target1 = GameObject.Find("huusen_animator");
+                GlobalVariables.HusenPosition = GlobalVariables.target1.transform.position;
 
-        gameObjectMakeStage = GameObject.Find("Stage") as GameObject;
-        gameObjectMakeStage.GetComponent< MakeStage >();
-*/
+                gameObjectMakeStage = GameObject.Find("Stage") as GameObject;
+                gameObjectMakeStage.GetComponent< MakeStage >();
+        */
     }
 
     // Update is called once per frame
@@ -77,7 +76,6 @@ public class HussenController : MonoBehaviour
             }
 //            GlobalVariables.target1 = GameObject.Find("huusen2");
             GlobalVariables.target1 = this.gameObject;
-            Debug.Log("GlobalVariables.target1" + GlobalVariables.target1);
 
             //Vector2  = GlobalVariables.target1.transform.position;
             //        target1 = Instantiate(Player);
@@ -272,7 +270,7 @@ public class HussenController : MonoBehaviour
                 Destroy(cube);
             }
             tag = "";
-            gameObjectMakeStage.GetComponent<MakeStage>().Update();
+            gameObjectMakeStage.GetComponent<MakeStage>().SetStage();
         }
 
     }
