@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ougiya20181006.Plugins", "ougiya20181006.Plugins.csproj", "{F188DB79-2DDE-D12D-3A86-AD704F1AFD33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ougiya20181006", "ougiya20181006.csproj", "{CF1B113E-BBDB-AC05-8FDA-594CF3B8282C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F188DB79-2DDE-D12D-3A86-AD704F1AFD33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F188DB79-2DDE-D12D-3A86-AD704F1AFD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F188DB79-2DDE-D12D-3A86-AD704F1AFD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F188DB79-2DDE-D12D-3A86-AD704F1AFD33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1B113E-BBDB-AC05-8FDA-594CF3B8282C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1B113E-BBDB-AC05-8FDA-594CF3B8282C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1B113E-BBDB-AC05-8FDA-594CF3B8282C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1B113E-BBDB-AC05-8FDA-594CF3B8282C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

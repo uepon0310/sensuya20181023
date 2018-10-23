@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2b273fa6b3bad77468dea231d17b9c6f
+timeCreated: 1538335524
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - Screen1: {fileID: 1784828282784468, guid: 82d489b830aea8a43b683cc4783d6e21, type: 2}
+  - Screen2: {fileID: 1445250094504892, guid: 312a0ff06ab09074191f8ffd1352d529, type: 2}
+  - Screen3: {fileID: 1282699564129322, guid: afc63d9bcbba0444e858e2ba6fe9f733, type: 2}
+  - Screen4: {fileID: 1054485917146628, guid: a7f6fcea823a76444915e4821e44f89c, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
