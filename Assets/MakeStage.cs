@@ -5,16 +5,16 @@ using UnityEngine;
 
 static class GlobalVariables
 {
-    static public int  StageNumber;
-    static public bool StageWriteFlag;
-    static public bool ResetTimeFlag;
-    static public float HusenGravityX;
+    static public int  StageNumber;         //面数
+    static public bool StageWriteFlag;      //
+    static public bool ResetTimeFlag;       //
+    static public float HusenGravityX;      //
     static public bool AnimationLeftFlag;
     static public bool AnimationRightFlag;
     static public bool AnimationIdleFlag;
     static public bool AnimationDownFlag;
     static public GameObject target1;
-    static public Vector2 HusenPosition;
+    static public Vector3 HusenPosition;
     static public bool RetryFlag;
     static public bool BombFlag;
     static public bool ReadyFlag =  false;
@@ -42,7 +42,10 @@ public class MakeStage : MonoBehaviour
     public float GameObjectWight;
 
     public GameObject target1;
-//    public bool StageWriteFlag;
+
+    public GameObject CameraObject;
+    
+    //    public bool StageWriteFlag;
 
     public int StageDataX, StageDataY;
     public int Stage;
@@ -128,7 +131,7 @@ public class MakeStage : MonoBehaviour
             { 1,0,0,0,0,0,0,0,0,1 },//18
             { 1,0,0,0,0,0,0,0,0,1 },//19
             { 1,0,0,0,0,0,0,0,0,1 },//20
-            { 1,0,0,0,0,0,0,0,0,1 },//21
+            { 1,0,0,0,0,0,0,1,1,1 },//21
             { 1,1,1,0,0,0,0,1,1,1 },//22
             { 9,9,9,9,9,9,9,9,9,9 },//23
         };
@@ -471,6 +474,7 @@ public class MakeStage : MonoBehaviour
         if (GlobalVariables.ReadyFlag == false)
         {
             SetStage();
+            CameraObject.GetComponent<CameraControl>().ReStart();
             GlobalVariables.ReadyFlag = true;
 
         }

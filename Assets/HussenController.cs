@@ -192,44 +192,8 @@ public class HussenController : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D t)
     {
         DeleteStage(t);
+    }
 
-/*        
-        string tag = t.gameObject.tag;
-
-        if (tag == "goal")
-        {
-            GlobalVariables.StageNumber = GlobalVariables.StageNumber + 1;
-            GlobalVariables.StageWriteFlag = true;
-            //            CreateStage(StageData2, 21, 57);
-            GameObject[] cubes = GameObject.FindGameObjectsWithTag("ob_wall");
-            foreach (GameObject cube in cubes)
-            {
-                // 消す！
-                Destroy(cube);
-            }
-            GameObject[] cubes2 = GameObject.FindGameObjectsWithTag("goal");
-            foreach (GameObject cube in cubes2)
-            {
-                // 消す！
-                Destroy(cube);
-            }
-            GameObject[] cubes3 = GameObject.FindGameObjectsWithTag("Karasu");
-            foreach (GameObject cube in cubes3)
-            {
-                // 消す！
-                Destroy(cube);
-            }
-            GameObject[] cubes4 = GameObject.FindGameObjectsWithTag("Togetoge");
-            foreach (GameObject cube in cubes4)
-            {
-                // 消す！
-                Destroy(cube);
-            }
-            tag = "";
-            gameObjectMakeStage.GetComponent<MakeStage>().Update();
-        }
-*/
-  }
     void FixedUpdate()
         {
             // 空気抵抗を与える
@@ -250,26 +214,38 @@ public class HussenController : MonoBehaviour
             {
                 // 消す！
                 Destroy(cube);
+                //cube.SetActive(false);
             }
             GameObject[] cubes2 = GameObject.FindGameObjectsWithTag("goal");
             foreach (GameObject cube in cubes2)
             {
                 // 消す！
                 Destroy(cube);
+                //cube.SetActive(false);
             }
             GameObject[] cubes3 = GameObject.FindGameObjectsWithTag("Karasu");
             foreach (GameObject cube in cubes3)
             {
                 // 消す！
                 Destroy(cube);
+                //cube.SetActive(false);
             }
             GameObject[] cubes4 = GameObject.FindGameObjectsWithTag("Togetoge");
             foreach (GameObject cube in cubes4)
             {
                 // 消す！
                 Destroy(cube);
+                //cube.SetActive(false);
+            }
+            GameObject[] cubes5 = GameObject.FindGameObjectsWithTag("Player");
+            foreach (GameObject cube in cubes5)
+            {
+                // 消す！
+                Destroy(cube);
+                //cube.SetActive(false);
             }
             tag = "";
+            GlobalVariables.ReadyFlag =false;
             gameObjectMakeStage.GetComponent<MakeStage>().SetStage();
         }
 
